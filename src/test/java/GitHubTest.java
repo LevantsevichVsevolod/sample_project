@@ -27,7 +27,7 @@ public class GitHubTest {
             /* How to set session timeout */
             put("sessionTimeout", "15m");
         }});
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), options);
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://192.168.100.3:4444/wd/hub"), options);
         driver.manage().window().setSize(new Dimension(1920, 1024));
         WebDriverRunner.setWebDriver(driver);
     }
